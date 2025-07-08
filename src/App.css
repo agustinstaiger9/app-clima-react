@@ -55,3 +55,47 @@ body {
   margin-bottom: 1rem;
 }
 
+/* --- MEDIA QUERIES --- */
+
+/* Tablets: pantalla menor a 768px */
+@media (max-width: 768px) {
+  .app {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+  
+  .search {
+    flex-direction: column;
+  }
+
+  .search input,
+  .search button {
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1.1rem;
+  }
+
+  .search button {
+    margin-top: 0.5rem;
+    border-radius: 6px;
+  }
+}
+
+/* Móviles: pantalla menor a 480px */
+@media (max-width: 480px) {
+  .app {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .search input,
+  .search button {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .weather-info img {
+    max-width: 100px;
+    height: auto;
+  }
+}
